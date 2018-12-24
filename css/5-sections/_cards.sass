@@ -1,0 +1,149 @@
+.large-window
+  height: 1024px
+  background:
+    image: url(../images/twice-per.jpg)
+    position: top center
+    repeat: no-repeat
+    attachment: fixed
+  margin-bottom: 100px
+  border-radius: 50%
+
+h2
+  font-size: 18px
+  text-transform: uppercase
+  font-weight: 700
+  display: inline-block
+  color: $accent
+  letter-spacing: 2px
+  transition-property: all 2s
+  transition: transform .3s
+  margin: 30px 30px 30px 503px
+
+  &:hover
+    transform: skewY(2deg) skewX(15deg) scale(1.1)
+    text-shadow: 1px 1px 4px rgba(0, 0, 0,.4)
+
+
+.card
+  perspective: 1500px
+  -moz-perspective: 1500px
+  position: relative
+  height: 350px
+  margin-bottom: 20px
+  text-align: center
+
+
+
+  &__side
+    color: #fff
+    font-size: 20px
+    height: 350px
+    width: 350px
+    transition: all .8s ease
+    position: absolute
+    top: 0
+    left: 0
+    backface-visibility: hidden
+    box-shadow: 2px 8px 10px rgba(0,0,0,.15)
+    border-radius: 10px
+
+
+    &--front
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: cover
+
+      font-family: cursive
+      font-size: 25px
+      color: #e9bda3
+
+
+      &--nayeon
+      // background-color: lime
+      background-image: url(../images/card-nayeon.jpg)
+      &--jihyo
+        background-image: url(../images/card-jihyo.jpg)
+      &--jeongyeon
+        background-image: url(../images/card-jeongyeon.jpg)
+      &--momo
+        background-image: url(../images/card-momo.jpg)
+      &--sana
+        background-image: url(../images/card-sana.jpg)
+      &--mina
+        background-image: url(../images/card-mina.jpg)
+      &--dahyun
+        background-image: url(../images/card-dahyun.jpg)
+      &--chaeyoung
+        background-image: url(../images/card-chaeyoung.jpg)
+      &--tzuyu
+        background-image: url(../images/card-tzuyu.jpg)
+
+    &--back
+      transform: rotateY(180deg)
+      display: flex
+      justify-content: space-around
+      align-content: center
+
+
+      // background-image: url(../images/twice-logo.jpeg)
+      // opacity: .2
+      // background-position: center center
+      // background-repeat: no-repeat
+      // background-size: cover
+
+      // &--nayeon
+      //   background-color: skyblue
+
+
+  &:hover &__side--front
+    transform: rotateY(-180deg)
+
+  &:hover &__side--back
+    transform: rotateY(0)
+
+  &__details
+    flex: 1
+    color: $accent
+    background-image: linear-gradient(to top, #91c1d1, #b9d9e3, #e3f0f3, #fff)
+    height: 100%
+    border-radius: 10px
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+    ul
+      list-style: none
+      width: 100%
+      margin: 0 auto
+      margin-top: 35px
+      margin-left: -22px
+
+      li
+        text-align: center
+        font-size: 13px
+        // padding: 2px
+
+        em
+          font-size: 12px
+          background-color: #000
+          color: #fff
+          border-radius: 50%
+
+
+      &::not(:last-of-type)
+        border-bottom: 1px solid $accent
+
+
+
+  &__picture
+    // height: 200px
+    background-blend-mode: screen
+    background-image: url(../images/card-back.jpg)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+    width: 50%
+    height: 100%
+    flex: 0 0 50%
+    border-radius: 10px
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0

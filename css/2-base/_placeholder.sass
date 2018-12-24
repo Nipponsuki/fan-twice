@@ -1,0 +1,21 @@
+%small-bold
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+
+
+// @mixin clearfix
+//   content: ""
+//   display: table
+//   clear: both
+//
+
+
+@mixin clearfix
+  &::after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0

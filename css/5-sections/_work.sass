@@ -1,0 +1,457 @@
+
+.alt-section
+  background-image: linear-gradient(to top, #91c1d1, #b9d9e3, #e3f0f3, #fff)
+
+h3
+  margin-bottom: 0
+  text-align: center
+
+
+
+.thumb-container
+  max-width: 960px
+  margin: 0 auto
+  padding-bottom: 100px
+  @include clearfix
+
+
+  .thumb-unit-1
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-1.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+    perspective: 300px
+
+    .thumb-overlay-1
+      position: absolute
+      top: 0%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .5s
+      transform: rotateX(90deg)
+      transform-origin: bottom
+      opacity: 0
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+
+
+
+    &:hover .thumb-overlay-1
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+      transform: rotateX(0deg)
+      opacity: 1
+
+  .thumb-unit-2
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-2.png)
+      position: center center
+      repeat: no-repeat
+      size: cover
+    perspective: 300px
+
+    .thumb-overlay-2
+      position: absolute
+      top: -50%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transform: rotateY(90deg)
+      transition: all .5s
+      opacity: 0
+
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-2
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+      transform: rotateY(0)
+      opacity: 1
+
+  .thumb-unit-3
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-3.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+    perspective: 300px
+
+
+    .thumb-overlay-3
+      position: absolute
+      top: -50%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transform: rotateX(90deg)
+      transition: all .5s
+      opacity: 0
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-3
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+      opacity: 1
+      transform: rotateX(0)
+
+
+  .thumb-unit-4
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-4.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+    perspective: 300px
+
+    .thumb-overlay-4
+      position: absolute
+      top: -50%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .5s
+      opacity: 0
+      transform: translateX(-100px)
+
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-4
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+      opacity: 1
+      transform: translateX(0)
+
+  .thumb-unit-5
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-5.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+    perspective: 300px
+
+    .thumb-overlay-5
+      position: absolute
+      top: -50%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .5s
+      opacity: 0
+      transform: rotateX(-90deg)
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-5
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+      opacity: 1
+      transform: rotateX(0)
+
+  .thumb-unit-6
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-6.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .thumb-overlay-6
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .3s
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-6
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+
+  .thumb-unit-7
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-7.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .thumb-overlay-7
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .3s
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+
+    &:hover .thumb-overlay-7
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+
+  .thumb-unit-8
+    display: block
+    width: 25%
+    float: left
+    // height: 150px
+    position: relative
+    padding-top: 16%
+    overflow: hidden
+    background:
+      image: url(../images/album-8.jpg)
+      position: center center
+      repeat: no-repeat
+      size: cover
+
+    .thumb-overlay-8
+      position: absolute
+      top: 100%
+      left: 0
+      right: 0
+      bottom: null
+      height: 100%
+      background: fade-out($accent, .1)
+      text-align: center
+      transition: all .3s
+
+      strong
+        padding: 45px
+        display: block
+        color: #fff
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 24px
+        line-height: 1.2
+
+    &:hover .thumb-overlay-8
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      // bottom: 1
+      bottom: null
+
+
+.btn
+  border: none
+  color: $accent
+  font-size: inherit
+  border-bottom: 1px solid $accent
+  padding-bottom: 2px
+  display: inline-block
+  background-color: transparent
+  cursor: pointer
+  transition: all .2s
+  margin: 5px 20px 10px 583px
+
+  & span
+      margin-left: 3px
+      transition: margin-left .2s
+
+  &:hover
+      color: #4dafa6
+      border-top: 2px solid #4dafa6
+      border-right: 2px solid #4dafa6
+      border-bottom: none
+      // box-shadow: 0 2px 3px rgba(0,0,0,.5)
+      span
+        margin-left: 8px
+
+  &:focus
+      outline: none
+
+  // font-size: 1.5rem
+  // font-weight: 500
+  // text-transform: uppercase
+  // border-radius: 100px
+  // border: none
+  // background-image: linear-gradient(to right, #299e93,#4dafa6)
+  // color: #fff
+  // // position: relative
+  // overflow: hidden
+  // cursor: pointer
+  // font-size: 14px
+  // width: 140px
+  // height: 40px
+  // transition: all .2s
+  // font-family: sans-serif
+  // text-decoration: none
+  // text-align: center
+  // margin: 5px 5px 10px 560px
+  //
+  //
+  //
+  //
+  // &:hover
+  //     background-image: linear-gradient(to left, #4dafa6, #299e93)
+  //     transform: scale(1.1)
+  //     color: #fff
+  //     box-shadow: 0 3px 5px rgba(0,0,0,.5)
+  //     font-weight: 400
+  //
+  // &:active
+  //   outline: none
+  //   color: #fff
+  // &::after
+  //   outline: none
+  //   color: #fff

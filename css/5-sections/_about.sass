@@ -1,0 +1,168 @@
+.section-about
+
+  h3
+  @extend %small-bold
+  color: $accent
+  text-align: center
+
+
+  .lockup
+    display: flex
+    // border: 5px solid lime
+    justify-content: center
+    align-items: center
+    max-width: 1600px
+    margin-bottom: 15px
+
+    @media screen and (max-width:650px)
+      .lockup
+        display: block
+        text-align: center
+
+        .text-lockup
+          display: block
+          text-align: center
+          padding: 1
+
+    .face-lockup
+      flex: 0 0 70%
+      max-width: 600px
+      display: flex
+      flex-direction: row
+      justify-content: center
+      margin: 0 10px
+      // border: 2px solid #000
+      flex-wrap: wrap
+
+
+      .about-nayeon
+        background-image: url(../images/nayeon-1.jpg)
+      .about-jeongyeon
+        background-image: url(../images/jeongyeon.jpg)
+      .about-momo
+        background-image: url(../images/momo.jpg)
+      .about-sana
+        background-image: url(../images/sana-1.jpg)
+      .about-jihyo
+        background-image: url(../images/jihyo-1.jpg)
+      .about-mina
+        background-image: url(../images/mina.jpg)
+      .about-dahyun
+        background-image: url(../images/dahyun.jpg)
+      .about-chaeyoung
+        background-image: url(../images/chaeyoung.jpg)
+      .about-tzuyu
+        background-image: url(../images/tzuyu.jpg)
+
+      [class^='name-']
+        visibility: hidden
+        opacity: 0
+
+
+      [class^='about-']
+        width: 140px
+        height: 140px
+        margin: 16px
+        border-radius: 10%
+        background-size: cover
+        transition: all .4s
+        box-shadow: 0 4px 20px (rgba(0,0,0,.9))
+
+        &:hover
+          transform: scale(1.1)
+          font-size: 13px
+          box-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3b89ab 0px 0px 20px, #3b89ab 0px 0px 30px, #3b89ab 0px 0px 40px, #3b89ab 0px 0px 50px, #3b89ab 0px 0px 75px
+          border-radius: 50%
+
+          [class^='name-']
+            visibility: visible
+            transform: translateX(60px) translateY(100px) scale(2)
+            opacity: 1
+            text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3b89ab  0px 0px 20px, #3b89ab 0px 0px 30px, #3b89ab 0px 0px 40px, #3b89ab 0px 0px 50px, #3b89ab 0px 0px 75px
+            color: #FFFFFF
+            font-family: "UnGungseo"
+            font-weight: 400
+    .text-lockup
+      flex: 1
+      font-size: 18px
+      text-align: justify
+      font-weight: 300
+      text-transform: none
+      max-width: 500px
+      color: $accent
+      transition: all .2s
+      a
+        transition: all .2s
+
+        &:link,
+        &:active,
+        &:visited
+          text-decoration: none
+          color: #3b89ab
+          font-weight: bold
+
+
+        &:hover
+          text-decoration: none
+          color: #fff
+          box-shadow: 0 1rem 2rem #3b89ab
+          transform: rotate(10deg) scale(1.3)
+          background-color: $accent
+          font-weight: normal
+
+    
+
+
+  .skill-lockup
+    max-width: 900px
+    margin: 100px auto
+    color: $accent
+    content: ""
+    display: flex
+    clear: both
+    // border: 2px solid red
+
+    .skill-unit
+      width: 350px
+      float: left
+
+    .skill-label
+      margin-bottom: 10px
+
+
+    .skill-icons
+      font-size: 0
+      margin: 0px 0 30px
+
+
+      span
+        display: inline-block
+        width: 14px
+        height: 14px
+        background-color: $accent
+        margin-right: 5px
+        border-radius: 50%
+
+        &:after
+          content: ""
+          display: block
+          width: 10px
+          height: 10px
+          background-color: rgba(255,255,255,.6)
+          border-radius: 50%
+          margin: 2px
+
+      // &.skill-8 span:nth-child(n+9)
+      //   background-color: rgba(221, 206, 246,1)
+
+    @for $i from 1 through 10
+      .skill-#{$i} span:nth-child(n+#{$i+1})
+        @extend %skill-color
+
+  @media screen and (max-width: 541px)
+    .skill-lockup
+      width: 270px
+      display: block
+
+  %skill-color
+    background-color: rgba(221, 206, 246,1)
